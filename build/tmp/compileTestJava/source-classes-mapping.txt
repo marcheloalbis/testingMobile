@@ -2,18 +2,18 @@ cleanTest/ContactTest.java
  cleanTest.ContactTest
 factoryDevices/IDevice.java
  factoryDevices.IDevice
-activities/whenDo/MainScreen.java
- activities.whenDo.MainScreen
+controlAppium/Button.java
+ controlAppium.Button
 factoryDevices/BrowserStack.java
  factoryDevices.BrowserStack
-cleanTest/WhenDoTest.java
- cleanTest.WhenDoTest
+activities/whenDo/UpdateTaskScreen.java
+ activities.whenDo.UpdateTaskScreen
+controlAppium/TextBox.java
+ controlAppium.TextBox
 factoryDevices/IOS.java
  factoryDevices.IOS
-session/Button.java
- session.Button
-session/Label.java
- session.Label
+activities/whenDo/DeleteTaskScreen.java
+ activities.whenDo.DeleteTaskScreen
 session/Session.java
  session.Session
 basicTest/BasicAppium.java
@@ -34,7 +34,7 @@ factoryDevices/WindowsPhone.java
  factoryDevices.WindowsPhone
 controlAppium/Label.java
  controlAppium.Label
-controlAppium/Button.java
- controlAppium.Button
-controlAppium/TextBox.java
- controlAppium.TextBox
+activities/whenDo/MainScreen.java
+ activities.whenDo.MainScreen
+cleanTest/WhenDoTest.java
+ cleanTest.WhenDoTest

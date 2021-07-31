@@ -32,30 +32,25 @@ public class WhenDoTest {
 
     @Test
     public void verifyUpdateTask() throws MalformedURLException {
-        String title="CLEAN";
-
-        //mainScreen.addTaskButton.click();
-        //selecciona la tarea
-        //edita titulo
-        //edita contenido
-        //presiona boton de guardar
-        updateTaskScreen.titleTextBox.setValue(title);
-        updateTaskScreen.descriptionTextBox.setValue("this is a description");
+        verifyCreateTask();
+        String title="new tittle";
+        String description="UPdated description";
+        mainScreen.selectTask.click();
+        updateTaskScreen.updateTitleTextBox.setValue(title);
+        updateTaskScreen.updateDescriptionTextBox.setValue(description);
         updateTaskScreen.saveButton.click();
         Assert.assertEquals("ERROR! task was not created",title,mainScreen.nameTaskLabel.getText());
     }
 
     @Test
     public void verifyDeleteTask() throws MalformedURLException {
-        String title="CLEAN";
-        //selecciona la tarea
-       // presiona boton de eliminar
-        //presiona eliminar en notificacion emergente
-        mainScreen.addTaskButton.click();
-        deleteTaskScreen.titleTextBox.setValue(title);
-        deleteTaskScreen.descriptionTextBox.setValue("this is a description");
-        deleteTaskScreen.saveButton.click();
-        Assert.assertEquals("ERROR! task was not created",title,mainScreen.nameTaskLabel.getText());
+        verifyCreateTask();
+        String title="new tittle";
+        mainScreen.selectTask.click();
+        deleteTaskScreen.deleteButton.click();
+        deleteTaskScreen.deleteConfirmationButton.click();
+//        Assert.assertFalse(mainScreen.isItemDisplayed());
+
     }
 
 

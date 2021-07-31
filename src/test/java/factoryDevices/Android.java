@@ -15,10 +15,10 @@ public class Android implements IDevice{
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("deviceName","Mi A2");
         capabilities.setCapability("platformVersion","10");
-       // capabilities.setCapability("appPackage","com.vrproductiveapps.whendo");
-       // capabilities.setCapability("appActivity",".ui.HomeActivity");
-         capabilities.setCapability("appPackage","com.google.android.dialer");
-         capabilities.setCapability("appActivity",".extensions.GoogleDialtactsActivity");
+        capabilities.setCapability("appPackage","com.vrproductiveapps.whendo");
+        capabilities.setCapability("appActivity",".ui.HomeActivity");
+       //  capabilities.setCapability("appPackage","com.google.android.dialer");
+         //capabilities.setCapability("appActivity",".extensions.GoogleDialtactsActivity");
         capabilities.setCapability("platformName","Android");
         AppiumDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
         // implicit wait
